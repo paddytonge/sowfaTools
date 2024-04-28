@@ -36,6 +36,7 @@ for i = 1:length(heights)
     ww(i) = mean(UU(:,i*6+2)); % This is <w'w'>
 end
 
+M = sqrt(u.^2 + v.^2);
 % Time average the potential temperature
 t = mean(T,1);
 
